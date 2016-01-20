@@ -1,0 +1,6 @@
+User story 1:
+The card: as a game designer, i would like to have a deck of cards so that the button on the screen could deal the card.
+
+The Conversation: it will pick randomly 4 project(suit and rank) from the deck and print out to the screen.   
+
+The Confirmation: we can check it on the url:localhost8080/Acesup and click on the deal button it will be are 4 card on the webpage. For example,club 3 looks like c3 on the screen.
