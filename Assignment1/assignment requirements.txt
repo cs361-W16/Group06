@@ -1,0 +1,24 @@
+ Group
+1 INVEST User Stories in Github Wiki
+
+2 Feature requests in Github Issue Tracker
+
+3 Features developed in feature branches
+
+4 Code follows MVC
+
+5 Code is stateless
+
+6 Model And Controller Code developed using TDD (>90% Test Coverage)
+
+7 Tests for each User Story
+
+Individual
+
+1 Implemented at least one User Story
+
+2 Code merged into Project from Pull Request
+
+3 Constructive Comments on another team member¡¯s Pull Request
+
+4 Attend Grading meeting
