@@ -3,15 +3,28 @@ import models.Card;
 import models.Deck;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class test {
+public class test1 {
+    @Test
+    public void testforgetsuit(){
+        Card card1 = new Card("A","C");
+        assertEquals("A",card1.getRank());
+    }
+
+    @Test
+    public void testforgetsuit2(){
+        Card card1 = new Card("A","C");
+        assertEquals("C",card1.getSuit());
+    }
+
+
     @Test
     public void testDeck1() {
         Deck deck = new Deck();
         assertNotNull(deck);
     }
-    // add more test here
 
 
     @Test
