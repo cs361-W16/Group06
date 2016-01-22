@@ -40,6 +40,19 @@ public class test1 {
         System.out.print("\n");
     }
 
+    @Test
+    public void testDeck3() {
+        Deck deck = new Deck();
+        String[] d = new String[52];
+
+        for (int i = 0; i < 52; i++) {
+            Card card = deck.deal();
+            d[i] = card.getRank() + card.getSuit();
+            System.out.println(d[i]);
+        }
+        System.out.print("\n");
+    }
+
 
 
 
