@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class test1 {
- /*
+
     @Test
     public void testforgetsuit(){
         Card card1 = new Card("A","C");
@@ -53,7 +53,7 @@ public class test1 {
         }
 
     }
-*/
+
     @Test
      public void TestTable ( ){
         Table new_table=new Table();
@@ -75,5 +75,17 @@ public class test1 {
             assertEquals(" ", card1.getRank());
             assertEquals(" ", card1.getSuit());
         }
+    }
+
+    @Test
+    public void TestColumnContainsCard (){
+        Table new_table=new Table();
+        new_table.Fill_Column();
+        Card card1 = new_table.Reurn_Column_1();
+        Card card2 = new_table.Reurn_Column_2();
+        Card card3 = new_table.Reurn_Column_3();
+        Card card4 = new_table.Reurn_Column_4();
+        System.out.print("Show the four cards in the first  round\n");
+        System.out.print(card1.getRank()+" "+card1.getSuit()+"|"+card2.getRank()+" "+card2.getSuit()+"|"+card3.getRank()+" "+card3.getSuit()+"|"+card4.getRank()+" "+card4.getSuit()+"\n");
     }
 }
