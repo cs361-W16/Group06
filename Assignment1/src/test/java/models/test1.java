@@ -1,12 +1,14 @@
 
 import models.Card;
 import models.Deck;
+import models.Table;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class test1 {
+ /*
     @Test
     public void testforgetsuit(){
         Card card1 = new Card("A","C");
@@ -51,5 +53,27 @@ public class test1 {
         }
 
     }
+*/
+    @Test
+     public void TestTable ( ){
+        Table new_table=new Table();
+        assertNotNull(new_table);   //Test for whether can generate a clean table.
+    }
 
+    @Test
+    public void TestColumContain0 (){
+        Table new_table=new Table();
+        Card card1=new_table.Reurn_Column_1();
+        assertNotNull(card1);
+    }
+
+    @Test
+    public void TestColumnContains0All (){
+        Table new_table=new Table();
+        for (int i=0;i<13;i++) {
+            Card card1 = new_table.Reurn_Column_1();
+            assertEquals(" ", card1.getRank());
+            assertEquals(" ", card1.getSuit());
+        }
+    }
 }

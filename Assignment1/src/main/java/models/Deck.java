@@ -23,7 +23,6 @@ public class Deck {
         if(count >= 0){
             Card card1 = deck[count];
             count--;
-
             return card1;
         }else{
             return null;
