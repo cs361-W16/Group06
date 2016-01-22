@@ -7,6 +7,10 @@
     function Refresh ( ) {
 		location.reload();
 	}
+
+	function remove(){
+
+	}
 </script>
 
 <body>
@@ -36,6 +40,7 @@
             <tr><td class="cardLocation"></td></tr>
             <tr><td class="cardLocation"></td></tr>
             <tr><td><button id="remove1">Remove</button></td></tr>
+            <tr><td><button id="swap1">swap</button></td></tr>
         </table>
     </td>
         <td class="columnOfCards" id="c2">
@@ -55,6 +60,7 @@
                 <tr><td class="cardLocation"></td></tr>
                 <tr><td class="cardLocation"></td></tr>
                 <tr><td><button id="remove2">Remove</button></td></tr>
+                <tr><td><button id="swap2">swap</button></td></tr>
             </table>
         </td>
         <td class="columnOfCards" id="c3">
@@ -74,6 +80,7 @@
                 <tr><td class="cardLocation"></td></tr>
                 <tr><td class="cardLocation"></td></tr>
                 <tr><td><button id="remove2">Remove</button></td></tr>
+                <tr><td><button id="swap3">swap</button></td></tr>
             </table>
         </td>
         <td class="columnOfCards" id="c4">
@@ -93,6 +100,7 @@
                 <tr><td class="cardLocation"></td></tr>
                 <tr><td class="cardLocation"></td></tr>
                 <tr><td><button id="remove4">Remove</button></td></tr>
+                <tr><td><button id="swap4">swap</button></td></tr>
             </table>
         </td>
     </tr>
@@ -100,6 +108,7 @@
 
 <button id="dealButton">Deal</button>
 <button id="reset" onclick="Refresh()">Play it again</button>
+<button id="remove" onclick="remove()">Remove</button>
 
 
 </body>
