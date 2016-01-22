@@ -3,6 +3,12 @@
 <link href="/assets/css/AcesUp.css" rel="stylesheet">
 <script type="text/javascript" src="/assets/webjars/jquery/2.1.3/jquery.js"></script>
 
+<script>
+    function Refresh ( ) {
+		location.reload();
+	}
+</script>
+
 <body>
 
 <table>
@@ -93,7 +99,7 @@
 </table>
 
 <button id="dealButton">Deal</button>
-<button id="reset">Reset</button>
+<button id="reset" onclick="Refresh()">Play it again</button>
 
 
 </body>
