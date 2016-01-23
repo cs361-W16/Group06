@@ -15,7 +15,10 @@
  */
 
 package controllers;
-
+import models.Table;
+import models.Card;
+import models.Deck;
+import ninja.Context;
 import ninja.Result;
 import ninja.Results;
 
@@ -33,4 +36,19 @@ public class ApplicationController {
         return Results.html().template("views/AcesUp/AcesUp.flt.html");
     }
 
+    public Result init ( ){
+        Table new_table=new Table();
+        new_table.Fill_Column();
+       // String card_rank;
+      //  String card_suit;
+        String return_card=new_table.Reurn_Column_1().getR_S()+new_table.Reurn_Column_2().getR_S()+new_table.Reurn_Column_3().getR_S()+new_table.Reurn_Column_4().getR_S();
+
+        return Results.json( ).render(return_card);
+    }
+  /*  public Result another (Context context, Card c) {
+        Card card1=new Card ( );
+        card1.setRank("11");
+        card1.setSuit("h");
+        return Results.json( ).render(card1);
+    }*/
 }

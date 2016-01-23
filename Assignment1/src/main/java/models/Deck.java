@@ -13,8 +13,9 @@ public class Deck {
 
     public Deck(){
         for(int i = 0; i < 52; i++){
-
-            deck[i] = new Card( ranks[i % 13], suits[i / 13]);
+            deck[i]=new Card (ranks[i%13],suits[i/13]);
+          //  deck[i].setSuit(suits[i/13]);
+           // deck[i].setRank(ranks[i%13]);
         }
     }
 
