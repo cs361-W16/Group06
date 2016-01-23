@@ -9,7 +9,7 @@
 	}
 </script>
 
-<body>
+
 <p>	<h3>Rules of Aces Up from wikipedia </h3>
     1. Deal four cards in a row face up.<br>
 	2. If there are two or more cards of the same suit, discard all but the highest-ranked card of that suit.<br>
@@ -112,7 +112,42 @@
 
 <button id="dealButton">Deal</button>
 <button id="reset" onclick="Refresh()">Play it again</button>
+<div id="disp"></div>
+<script>
+	var card;
+	
+	function display (data){
+		//var holder;
+	//	i=0;
+		$("#c1 .l0").html(data.slice(0,2));
+        $("#c2 .l0").html(data.slice(2,4));
+        $("#c3 .l0").html(data.slice(4,6));
+        $("#c4 .l0").html(data.slice(6,8));
 
 
+	}
+	$. getJSON("/AcesUp/init", function (data) {
+	  //  alert(data);
+	    card=data;
+		display(card);
+		card=data;
+	});
+	
+   /* $("#dealButton").click(function (){
+
+		$.ajax({
+			type: "POST",
+			url: "/AcesUp/another",
+			data: JSON.stringify(card),
+			success: function (data, status){
+				console.log("Data:"+ data + "\n Status" + status);
+				card=data;
+				display(card);
+			},
+			contentType: "application/json; charset=utf-8",
+			dataType: "json",
+		});
+	});*/
+</script>
 </body>
 </html>
